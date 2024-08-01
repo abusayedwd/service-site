@@ -1,0 +1,85 @@
+module.exports = {
+  mode: "jit",
+  content: [
+    "./src/**/**/*.{js,ts,jsx,tsx,html,mdx}",
+    "./src/**/*.{js,ts,jsx,tsx,html,mdx}",
+  ],
+  darkMode: "class",
+  theme: {
+    screens: {
+      de: { max: "10036px" },
+      lg: { max: "1440px" },
+      md: { max: "1050px" },
+      sm: { max: "550px" },
+    },
+    extend: {
+      colors: {
+        amber: { 400: "#ffda19" },
+        black: {
+          "900_0f": "#0000000f",
+          "900_1e": "#0000001e",
+          "900_23": "#00000023",
+          "900_28": "#00000028",
+          "900_33": "#00000033",
+          "900_60": "#0c0c0c60",
+        },
+        blue_gray: {
+          200: "#b3b9be",
+          500: "#73808d",
+          900: "#172340",
+          "900_01": "#223051",
+        },
+        color_palette: { text_color: { text_color_500: "#333333" } },
+        colors: { black_1_primary_text_: "#313131", grey_4_border_: "#e9e9e9" },
+        dark_1: "#161515",
+        default: { black: "#000000" },
+        foundation: {
+          black: {
+            black_100: "#b4b4b4",
+            black_300: "#5c5c5c",
+            black_400: { 0: "#3d3d3d", 1: "#4e4e4e" },
+            black_500: { 0: "#0c0c0c", 1: "#0c0c0cf4" },
+          },
+          floral_white: { floral_white_500: "#fdf8f4" },
+          maastricht_blue: {
+            maastricht_blue_300: "#5a6873",
+            maastricht_blue_500: { 0: "#091d2e", 1: "#091d2ead" },
+            maastricht_blue_50: { 0: "#f4f7f6", 1: "#e6e8ea" },
+            maastricht_blue_600: "#081a2a",
+          },
+          primary_black: {
+            primary_black_400: "#494949",
+            primary_black_500: "#222222",
+          },
+          white: { white_500: { 0: "#ffffff", 1: "#ffffffcc" } },
+          gray: {
+            200: "#e7e7e7",
+            300: "#dce5e4",
+            600: "#6c757d",
+            700: "#626262",
+            900: "#101214",
+            "900_01": "#1d1d1f",
+            "900_02": "#1f1f1f",
+          },
+          orange: { 300: "#ffba5f" },
+          teal: { 100: "#b2d8c4", 400: "#309689" },
+        },
+        boxShadow: {
+          xs: "0 4px 10px 0 #0000001e",
+          sm: "0 2px 10px 0 #00000023",
+          md: "0 0 15px 0 #0000000f",
+          lg: "0 4px 12px 0 #0000001e",
+          xl: "0 4px 12px 0 #00000028",
+          bs: "inset 0 0 2px 0 #00000033",
+        },
+      },
+      fontFamily: {
+        montserrat: "Montserrat",
+        poppins: "Poppins",
+        inter: "Inter",
+        outfit: "Outfit",
+      },
+    },
+  },
+  plugins: [require("@tailwindcss/forms")],
+};
